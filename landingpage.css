@@ -105,16 +105,13 @@ header{
 }
 
 .hero{
-     border: 2px solid blue;
     display: flex;
     justify-content: space-around;
-    /* gap: ; */
     width: 80%;
     margin: auto;
     padding: 80px 0;
 }
 .hero-left{
-    border: 2px solid red;
     width: 36%;
     /* padding: 0 80px; */
 }
