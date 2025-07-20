@@ -10,7 +10,6 @@
 /* HEADER */
 
 header{
-    border: 2px solid red;
     background-color: #F2F8F3;
 }
 
@@ -109,7 +108,7 @@ header{
     justify-content: space-around;
     width: 80%;
     margin: auto;
-    padding: 80px 0;
+    padding: 120px 0 80px 0;
 }
 .hero-left{
     width: 36%;
@@ -142,9 +141,30 @@ header{
 
 
 
-.hero-image{
+.hero-image {
     position: relative;
+    /* opacity: 0; */
+    /* transform: translateY(-30px); */
+    animation: bounceIn 5s ease infinite;
 }
+
+@keyframes bounceIn {
+  0% {
+    /* opacity: 0; */
+    transform: translateY(0px);
+  }
+  60% {
+    /* opacity: 1; */
+    transform: translateY(15px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 .hero-dollar{
     position: absolute;
@@ -384,5 +404,129 @@ header{
     }
     .hero-gift{
         top: 230px;
+    }
+}
+
+
+
+/* SECT_TWO */
+
+.sect-2{
+    background-color: #F2F8F3;
+}
+
+.join{
+    border: 2px solid blue;
+    width: 80%;
+    margin: auto;
+    padding: 70px 0;
+}
+
+.join-text{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #000000;
+}
+
+.join-text h2{
+    font-size: 2.4em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.join-text p{
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.join-text p span{
+    color: #10B259;
+}
+
+/* JOIN-TEXT-MEDIA QUERY */
+
+@media(max-width: 1353px){
+    .join-text{
+        width: 60%;
+    }
+}
+
+@media(max-width: 1130px){
+    .join-text{
+        width: 80%;
+    }
+}
+
+@media(max-width: 990px){
+    .join{
+        width: 90%;
+    }
+}
+
+@media(max-width: 755px){
+    .join-text{
+        width: 90%;
+    }
+
+    .join-text h2{
+        font-size: 2em;
+    }
+    .join-text p{
+        font-size: .8em;
+    }
+}
+
+@media(max-width: 540px){
+    .join{
+        width: 100%;
+        padding: 70px 20px;
+    }
+    .join-text{
+        width: 100%;
+    }
+
+    .join-text h2{
+        font-size: 1.6em;
+    }
+}
+.assets{
+    display: flex;
+    border-top: 1px solid #57ac80;
+}
+
+.asset{
+    flex: 1;
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+}
+.asset + .asset{
+  border-left: 1px solid #57ac80;
+}
+
+
+.asset h2{
+    color: #000000;
+    font-weight: 480;
+    font-size: 2.6em;
+}
+
+.asset p{
+    color: #000000;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* ASSETS-MEDIA-QUERY */
+@media(max-width: 755px){
+    .assets{
+        flex-direction: column;
+        border-top: none;
+    }
+
+    .asset + .asset{
+        border-left: none;
+        border-top: 1px solid #57ac80;
     }
 }
