@@ -416,7 +416,6 @@ header{
 }
 
 .join{
-    border: 2px solid blue;
     width: 80%;
     margin: auto;
     padding: 70px 0;
@@ -563,7 +562,7 @@ header{
 
 
 
-/* SECT-4 */
+/* SECT-FOUR*/
 
 .sect-4{
     background-color: #FFFFFF;
@@ -571,22 +570,26 @@ header{
 }
 
 .vibrant-text{
-    width: 24%;
+    width: 32%;
     margin: auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
+.vibrant-text h1{
+    color: #000000;
+    font-weight: 600;
+}
 .vibrant-card{
     width: 70%;
     margin: auto;
     background-color: #10B259;
-    padding: 40px 70px 40px 70px;
+    padding: 30px 70px 20px 70px;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    height: 520px;
+    height: 480px;
 }
 
 .community-text{
@@ -603,7 +606,7 @@ header{
 
 .community-text p{
     max-width: 58%;
-    margin: 20px 0 80px 0;
+    margin: 20px 0 60px 0;
     font-size: 1em;
 }
 
@@ -613,21 +616,20 @@ header{
 }
 
 .vibrant-image{
-    /* position: absolute; */
-    /* right: 120px; */
-    /* bottom: 0; */
-    /* height: 80%; */
-    transform: translate(-5%, 10%);
+    transform: translate(-5%, 5%);
     z-index: 1;
 }
 
 
-/* MEDIA-QUERY */
+/* VIBRANT-MEDIA-QUERY */
 
 @media(max-width: 1205px){
+    .vibrant-text{
+        width: 56%;
+    }
     .vibrant-card{
         width: 90%;
-        height: 500px;
+        height: 460px;
     }
 
     .community-text p{
@@ -636,7 +638,7 @@ header{
     }
 
     .vibrant-image{
-       transform: translate(5%, 4%);
+       transform: translate(5%, 0%);
     }
 
     .vibrant-image img{
@@ -645,9 +647,15 @@ header{
 }
 
 @media(max-width: 990px){
+    .vibrant-text{
+        width: 76%;
+    }
+    .vibrant-text h1{
+         font-size: 2em;
+    }
     .vibrant-card{
         padding: 40px 80px 30px 30px;
-        min-height: 450px;
+        min-height: 410px;
     }
     .community-text{
         max-width: 48%;
@@ -672,24 +680,86 @@ header{
 }
 
 @media(max-width: 770px){
+    .sect-4{
+        padding: 100px 20px;
+    }
+
+    .vibrant-text h1{
+        font-size: 1.8em;
+    }
+
     .vibrant-card{
-        width: 96%;
+        width: 100%;
         padding: 10px 20px 10px 20px;
         flex-direction: column;
         text-align: center;
-        height: 650px;
+        height: 680px;
     }
 
     .community-text{
         max-width: 100%;
     }
 
+    .community-text h1{
+        font-size: 1.4em;
+        font-weight: 550;
+    }
     .community-text p{
-        max-width: 100%;
+        max-width: 90%;
         margin-bottom: 30px;
+        font-size: 14px;
     }
 
+    .visit-link{
+        font-size: 14px;
+    }
     .vibrant-image{
-        transform: translate(5%, 0);
+        transform: translate(5%, 4%);
+    }
+
+    .vibrant-image img{
+        width: 300px;
+    }
+}
+
+@media(max-width: 600px){
+    .vibrant-text{
+        width: 96%;
+    }
+    .vibrant-text h1{
+        font-size: 1.6em;
+    }
+    .vibrant-card{
+        height: 720px;
+    }
+    .vibrant-image{
+        transform: translate(0%, 2%);
+    }
+}
+
+@media(max-width: 451px){
+    .sect-4{
+        padding: 100px 10px;
+    }
+    .vibrant-text p{
+        font-size: .8em;
+    }
+    .vibrant-card{
+        padding: 10px 14px 10px 14px;
+    }
+    .community-text p{
+        max-width: 100%;
+    }
+    .vibrant-image{
+        transform: translate(0%, 12%);
+    }
+    .vibrant-image img{
+        width: 260px;
+    }
+}
+
+@media(max-width: 375px){
+    .vibrant-image{
+        transform: translate(0%, 2%);
     }
 }
