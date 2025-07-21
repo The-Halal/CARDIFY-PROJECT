@@ -578,24 +578,21 @@ header{
 }
 
 .vibrant-card{
-    border: 2px solid red;
     width: 70%;
     margin: auto;
-    position: relative;
     background-color: #10B259;
-    padding: 40px 60px 30px 60px;
+    padding: 40px 70px 40px 70px;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    min-height: 100px;
+    height: 520px;
 }
 
 .community-text{
     margin: 40px 0;
     color: white;
-    max-width: 42%;
+    max-width: 50%;
     z-index: 99;
 }
 
@@ -616,26 +613,21 @@ header{
 }
 
 .vibrant-image{
-    position: absolute;
-    right: 120px;
-    bottom: 0;
-    height: 80%;
-    transform: translate(10%, -14%);
+    /* position: absolute; */
+    /* right: 120px; */
+    /* bottom: 0; */
+    /* height: 80%; */
+    transform: translate(-5%, 10%);
     z-index: 1;
 }
 
 
-
-@media(max-width: 1347px){
-    .vibrant-image{
-       transform: translate(5%, 0);
-    }
-}
+/* MEDIA-QUERY */
 
 @media(max-width: 1205px){
     .vibrant-card{
         width: 90%;
-        min-height: 480px;
+        height: 500px;
     }
 
     .community-text p{
@@ -644,17 +636,17 @@ header{
     }
 
     .vibrant-image{
-       transform: translate(5%, -4%);
+       transform: translate(5%, 4%);
     }
 
     .vibrant-image img{
-        width: 300px;
+        width: 330px;
     }
 }
 
 @media(max-width: 990px){
     .vibrant-card{
-        padding: 40px 30px 30px 30px;
+        padding: 40px 80px 30px 30px;
         min-height: 450px;
     }
     .community-text{
@@ -664,21 +656,40 @@ header{
     .community-text h1{
     font-size: 1.6em;
     }
-    .vibrant-image{
-        right: 80px;
-    }
 }
 
-@media(max-width: 850px){
-    .vibrant-image{
-        right: 50px;
-        transform: translate(5%, 0);
-    }
-}
-
-@media(max-width: 750px){
+@media(max-width: 800px){
     .vibrant-card{
-        border: 4px solid blue;
+        padding: 20px 50px 30px 30px;
+    }
+
+    .vibrant-image{
+        transform: translate(5%, 10%);
+    }
+    .vibrant-image img{
+        width: 314px;
+    }
+}
+
+@media(max-width: 770px){
+    .vibrant-card{
+        width: 96%;
+        padding: 10px 20px 10px 20px;
         flex-direction: column;
+        text-align: center;
+        height: 650px;
+    }
+
+    .community-text{
+        max-width: 100%;
+    }
+
+    .community-text p{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .vibrant-image{
+        transform: translate(5%, 0);
     }
 }
