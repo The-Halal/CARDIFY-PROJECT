@@ -175,7 +175,6 @@ header{
 }
 
 .list-group{
-    width: 350px;
     border: none;
     background-color: #FFFFFF;
     padding: 10px;
@@ -204,8 +203,10 @@ header{
       /* font-weight: bold; */
 }
 
+
+
 .right-cardify{
-    width: 650px;
+    /* width: 650px; */
 }
 .tab-pane {
     padding-left: 10px;
@@ -227,4 +228,56 @@ header{
     font-weight: 500;
     border-bottom: 1px solid #E8EDEC;
     color: #24282C;
+}
+
+
+
+
+/* MEDIA-Query */
+@media(max-width: 1290px){
+    .about-cardify{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1080px){
+    .about-cardify{
+        width: 90%;
+    }
+}
+
+@media(max-width: 900px){
+    .about-cardify{
+        width: 98%;
+    }
+}
+
+@media(max-width: 753px){
+    .about-cardify{
+        padding: 0;
+    }
+
+    .list-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+   .list-group-item {
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    font-size: .6em;
+    transition: background-color 0.3s ease;
+    /* font-weight: 500; */
+  }
+}
+
+
+@media(max-width: 560px){
+    .list-group{
+        grid-template-columns: 1fr 1fr;
+    }
 }
