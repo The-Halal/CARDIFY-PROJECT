@@ -763,3 +763,82 @@ header{
         transform: translate(0%, 2%);
     }
 }
+
+
+
+/* SECT-6 */
+
+.sect-6{
+    background-color: #f2f8f3;
+    padding: 70px 0;
+}
+
+.visit-cardify{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 20px 0;
+}
+
+.cardifys{
+    padding: 10px 0;
+    display: flex;
+    gap: 1em;
+}
+
+.cardifys-icon{
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    width: 54px;
+}
+
+.visit-text span{
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+}
+.visit-text p{
+    font-size: .9em;
+    color: #212529;
+    margin-top:6px;
+    margin-bottom: 6px;
+}
+.visit-text a{
+    font-size: .9em;
+    text-decoration: none;
+    color: #303231;
+    font-weight: 500;
+}
+
+
+/* SECT-6-MEDIA-QUERY */
+
+@media(max-width: 1118px){
+    .visit-cardify{
+        width: 80%;
+    }
+}
+
+@media(max-width: 950px){
+    .sect-3{
+        padding: 70px 10px;
+    }
+    .visit-cardify{
+        width: 100%;
+    }
+
+    .cardifys-icon{
+        padding: 14px;
+        width:50px;
+    }
+}
+
+@media(max-width: 770px){
+
+    .visit-cardify{
+        grid-template-columns: 2fr;
+    }
+}

@@ -100,14 +100,12 @@ header{
 
 
 /* HERO-SECT */
-.hero-sect{
-    border: 2px solid red;
+.hero-sect{ 
     padding: 100px 0;
 }
 
 .hero{
-    border: 2px solid red;
-    width: 60%;
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -115,7 +113,6 @@ header{
     text-align: center;
 }
 .hero-sect h1{
-    border: 2px solid blue;
     font-size: 2.2rem;
     font-weight: 600;
     margin-bottom: 20px;
@@ -135,6 +132,11 @@ header{
 
 /* HERO-MEDIA-QUERY */
 
+@media(max-width: 1291px){
+    .hero{
+        width:60%;
+    }
+}
 @media(max-width: 1000px){
     .hero{
         width: 80%;
@@ -158,16 +160,14 @@ header{
 }
 
 
-/* SECT-2-MEDIA-QUERY */
+/* SECT-2*/
 
 .sect-2{
     background-color: #f2f8f3;
     padding: 60px 10px;
-    border: 2px solid green;
 }
 
 .about-cardify{
-    border: 2px solid red;
     width: 70%;
     padding: 10px;
     margin: auto;
@@ -203,11 +203,6 @@ header{
       /* font-weight: bold; */
 }
 
-
-
-.right-cardify{
-    /* width: 650px; */
-}
 .tab-pane {
     padding-left: 10px;
 }
@@ -233,7 +228,7 @@ header{
 
 
 
-/* MEDIA-Query */
+/* SECT-2-MEDIA-Query */
 @media(max-width: 1290px){
     .about-cardify{
         width: 80%;
@@ -271,13 +266,90 @@ header{
     border: none;
     font-size: .6em;
     transition: background-color 0.3s ease;
-    /* font-weight: 500; */
   }
 }
-
 
 @media(max-width: 560px){
     .list-group{
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/* SECT-3 */
+
+.sect-3{
+    background-color: #f2f8f3;
+    padding: 70px 0;
+}
+
+.visit-cardify{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 20px 0;
+}
+
+.cardifys{
+    padding: 10px 0;
+    display: flex;
+    gap: 1em;
+}
+
+.cardifys-icon{
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    width: 54px;
+}
+
+.visit-text span{
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+}
+.visit-text p{
+    font-size: .9em;
+    color: #212529;
+    margin-top:6px;
+    margin-bottom: 6px;
+}
+.visit-text a{
+    font-size: .9em;
+    text-decoration: none;
+    color: #303231;
+    font-weight: 500;
+}
+
+
+/* SECT-3-MEDIA-QUERY */
+
+@media(max-width: 1118px){
+    .visit-cardify{
+        width: 80%;
+    }
+}
+
+@media(max-width: 950px){
+    .sect-3{
+        padding: 70px 10px;
+    }
+    .visit-cardify{
+        width: 100%;
+    }
+
+    .cardifys-icon{
+        padding: 14px;
+        width:50px;
+    }
+}
+
+@media(max-width: 770px){
+
+    .visit-cardify{
+        grid-template-columns: 2fr;
     }
 }
