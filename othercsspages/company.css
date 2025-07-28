@@ -339,3 +339,83 @@ footer{
         width: 88%;
     }
 }
+
+/* FOOTER-INFOS */
+
+
+.footer-infos{
+    border: 2px solid red;
+   
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.footer-left{
+    display: flex;
+    gap: 2.6em;
+}
+
+.footer-logo{
+    display: grid;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer-products p, .footer-company p, .footer-legal p{
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-products li, .footer-company li, .footer-legal li{
+    margin-bottom: 6px;
+}
+.footer-products li a, .footer-company li a, .footer-legal li a{
+    text-decoration: none;
+    color: #556473;
+    font-size: 1em;
+}
+
+.footer-right{
+    display: flex;
+}
+.footer-icons{
+    text-align: end;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-brand{
+    font-size: 1em;
+    color: #3D4F60;
+}
+
+.linktree{
+    color: #298000;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.support{
+    color: #556473;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.cardi-afri{
+    margin-top: 30px;
+}
+.africa{
+    color: #556473;
+    text-decoration: none;
+    font-size: 1em;
+}
