@@ -304,7 +304,7 @@ header{
 }
 
 .bills-text{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .pay-bills h1{
     font-size: 2.4em;
@@ -315,7 +315,6 @@ header{
 }
 
 .bills-para{
-    border: 2px solid red;
     width: 46%;
     margin: auto;
     font-size: 1em;
@@ -323,16 +322,17 @@ header{
 }
 
 .bill-cards{
-    border: 2px solid blue;
     width: 100%;
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 1em;
+    justify-content: center;
 }
 .bill-card{
     background: white;
+    width: 100%;
     border-radius: 16px;
-    padding: 30px 30px 10px 30px ;
+    padding: 30px 20px 10px 20px ;
     height: 540px;
     overflow: hidden;
 }
@@ -376,36 +376,176 @@ header{
     background-color: b5fde5;
 }
 
-.phone-frame {
+.phone-frame1 {
   width: 250px;
   height: 100%;
   border-radius: 30px;
-  /* overflow: hidden; */
-  z-index: 2;
-  transform: scale(1.05) translateY(10%); /* affects whole frame */
+  transform: scale(1.05) translateY(10%);
+  margin: auto;
 }
 
-.phone-frame img {
+.phone-frame1 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
   transform: scale(1.05); 
 }
 
-/* .bill-img1{
-    transform: translateY(4%);
-    z-index: 2;
-    max-width:270px;
-    position: static;
-    margin: auto;
-    height: auto;
-} */
+.phone-frame2 {
+  width: 250px;
+  height: 100%;
+  border-radius: 30px;
+  transform: scale(1.05) translateY(14%);
+  margin: auto;
+}
 
-.bill-img2{
-    transform: translate(4%, 7%);
-    z-index: 2;
-    max-width:270px;
-    margin: auto;
-    height: auto;
+.phone-frame2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(1.05); 
+}
+
+
+/* SECT-2-MEDIA-QUERY */
+@media(max-width: 1400px){
+    .bill-card{
+        height: 580px;
+        padding: 30px 10px 10px 20px;
+    }
+    .bills-text{
+        margin-bottom: 60px;
+    }
+    .phone-frame1, .phone-frame2{
+        transform: scale(1.05) translateY(6%);
+    }
+}
+@media(max-width: 1370px){
+    .purchase{
+        gap: .4em;
+    }
+    .phone-frame1, .phone-frame2{
+        width: 240px;
+    }
+
+}
+
+@media(max-width: 1335px){
+    .pay-bills{
+        width: 76%;
+    }
+
+    .bills-para{
+        width: 44%;
+    }
+    .bill-cards{
+        grid-template-columns: 320px 320px 320px;
+    }
+
+    .bill-card{
+        height: 490px;
+    }
+
+    .purchase{
+        gap: .2em;
+    }
+    .phone-frame1, .phone-frame2{
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media(max-width: 1200px){
+    .pay-bills{
+        width: 96%;
+    }
+    .bills-para{
+        width: 66%;
+    }
+    .bill-cards{
+        grid-template-columns: repeat(3, 340px);
+    }
+
+    .purchase{
+        gap: .4em;
+    }
+}
+
+@media(max-width: 1100px){
+    .bill-cards{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .purchase{
+        gap: .4em;
+    }
+}
+
+@media(max-width: 977px){
+    .bills-para{
+        width: 78%;
+    }
+    .bill-cards{
+        width: 94%;
+        margin: auto;
+    }
+    .bill-card{ 
+        border: 2px solid yellow;
+        height: 500px;
+    }
+
+    .purchase{
+        gap: .4em;
+    }
+    .phone-frame1, .phone-frame2{
+        height: auto;
+        width: 250px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .bills-text h1{
+        font-size: 2.2em;
+    }
+    .bills-para{
+        width: 94%;
+    }
+    .bill-cards{
+        width: 70%;
+        margin: auto;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .bill-card{
+        height: 500px;
+    }
+
+    .purchase{
+        gap: .4em;
+    }
+    .phone-frame1, .phone-frame2{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media(max-width: 575px){
+
+   .bills-text h1{
+        font-size: 2.1em;
+    } 
+    .bill-cards{
+        width: 100%;
+    }
+
+    .bill-card{
+        padding: 30px 0px 10px 4px;
+    }
+    .purchase{
+        gap: .2em;
+    }
+    .phone-frame1, .phone-frame2{
+        width: 230px;
+    }
 }
