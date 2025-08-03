@@ -6,7 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 /* HEADER */
 
 header{
@@ -546,31 +545,31 @@ header{
 
 .virtual {
   border-radius: 16px;
-  padding: 25px 25px 20px 10px;
+  padding: 25px 25px 25px 10px;
   background-color: #fff;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
   border: 2px solid red;
-  max-height: 270px;
+  max-height: 300px;
 }
 
-.text-card {
+.text-virtual {
   background-color: #f1f7f4;
   box-shadow: none;
   padding: 30px;
 }
 
-.text-card h2 {
+.text-virtual h2 {
   font-size: 1.8rem;
   font-weight: bold;
   color: #111;
 }
 
-.text-card p {
+.text-virtual p {
   font-size: 1rem;
   color: #333;
 }
 
-.green-card{
+.green-virtual{
   background-color: #2ecc71;
   color: #fff;
   display: flex;
@@ -578,9 +577,6 @@ header{
   overflow: hidden;
 }
 
-.green-text {
-  /* flex: 1 1 250px; */
-}
 
 .green-image img{
   max-width: 140px;
@@ -590,7 +586,7 @@ header{
   transform: translateY(20%);
 }
 
-.blue-card{
+.blue-virtual{
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -620,29 +616,29 @@ header{
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.blue-card:hover{
+.blue-virtual:hover{
    transition: background-color 0.3s ease;
    background-color: #3296FF;
 }
 
-.blue-card:hover .blue-textone h2{
+.blue-virtual:hover .blue-textone h2{
   color: #ffff;
 }
 
-.blue-card:hover .blue-textone a{
+.blue-virtual:hover .blue-textone a{
   color: #ffff;
 }
-.blue-card:hover .blue-textone p{
+.blue-virtual:hover .blue-textone p{
   color: #ffff;
 }
 
-.blue-card:hover .blue-imgone img{
+.blue-virtual:hover .blue-imgone img{
    opacity: 1;
   transform: translateX(0) translateY(20%);
 }
 
 
-.pink-card{
+.pink-virtual{
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -662,29 +658,29 @@ header{
 .pink-text p{
   color: #333;
 }
-.pink-card:hover{
+.pink-virtual:hover{
    transition: background-color 0.3s ease;
    background-color: #FF0083;
 }
 
-.pink-card:hover .pink-text h2{
+.pink-virtual:hover .pink-text h2{
   color: #fff;
 }
 
-.pink-card:hover .pink-text a{
+.pink-virtual:hover .pink-text a{
   color: #fff;
 }
-.pink-card:hover .pink-text p{
+.pink-virtual:hover .pink-text p{
   color: #ffff;
 }
 
-.pink-card:hover .pink-img img{
+.pink-virtual:hover .pink-img img{
    opacity: 1;
   transform: translateX(0) translateY(20%);
 }
 
 
-.purple-card{
+.purple-virtual{
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -704,28 +700,28 @@ header{
 .purple-text p{
   color: #333;
 }
-.purple-card:hover{
+.purple-virtual:hover{
    transition: background-color 0.3s ease;
    background-color: #7200F9;
 }
 
-.purple-card:hover .purple-text h2{
+.purple-virtual:hover .purple-text h2{
   color: #fff;
 }
 
-.purple-card:hover .purple-text a{
+.purple-virtual:hover .purple-text a{
   color: #fff;
 }
-.purple-card:hover .purple-text p{
+.purple-virtual:hover .purple-text p{
   color: #ffff;
 }
 
-.purple-card:hover .purple-img img{
+.purple-virtual:hover .purple-img img{
    opacity: 1;
   transform: translateX(0) translateY(20%);
 }
 
-.blue-cardtwo{
+.blue-virtualtwo{
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -745,29 +741,29 @@ header{
 .blue-text p{
   color: #333;
 }
-.blue-cardtwo:hover{
+.blue-virtualtwo:hover{
    transition: background-color 0.3s ease;
    background-color: #0055FF;
 }
 
-.blue-cardtwo:hover .blue-text h2{
+.blue-virtualtwo:hover .blue-text h2{
   color: #fff;
 }
 
-.blue-cardtwo:hover .blue-text a{
+.blue-virtualtwo:hover .blue-text a{
   color: #fff;
 }
-.blue-cardtwo:hover .blue-text p{
+.blue-virtualtwo:hover .blue-text p{
   color: #ffff;
 }
 
-.blue-cardtwo:hover .blue-imgtwo img{
+.blue-virtualtwo:hover .blue-imgtwo img{
    opacity: 1;
   transform: translateX(0) translateY(20%);
 }
 
 
-
+/* SECT-3-MEDiA-QUERY */
 @media (max-width: 954px) {
   .cards-container {
     max-width: 100%;
@@ -993,45 +989,140 @@ header{
 /* SECT-5 */
 
 .sect-5{
-    border: 2px solid red;
+    /* border: 2px solid black; */
+    padding: 40px 0;
+    background-color: #FFFFFF;
 }
 
-.meet-text{
-    border: 2px solid green;
-    margin-bottom: 40px;
-}
-
-.meet-users{
-    border: 2px solid yellow;
-    /* width: 70%; */
+.meet-head{
+    /* border: 2px solid red; */
+    width: 50%;
     margin: auto;
-    display: flex;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.meet-head h2{
+    font-size: 2.2em;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.meet-head p{
+    /* color: #13181e; */
+    font-size: 1em;
+}
+.meet-users{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 1em;
 }
 
-/* .card{
-    padding: 20px;
-} */
 
+.meet-user{
+    border: 1px solid #cecbcb;
+    position: relative;
+    padding: 16px;
+    min-height: 430px;
+    border-radius: 16px;
+}
 .meet-youtube{
-    border: 2px solid black;
     width: 100%;
-    /* display: flex; */
+    margin-bottom: 10px;
 }
 
 .meet-youtube iframe{
     width: 100%;
+    border-radius: 8px;
 }
 
-/* .card-body{
-    border: 2px solid red;
-    width: 100%;
+
+.meet-text h4{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
-.card-title, .card-text, .btn{
-    width: 100%;
-} */
+.meet-text span{
+    color: #ACA5A4;
+}
+
+.meet-text p{
+    font-size: 12px;
+    color: #242c37;
+    margin-top: 20px;
+}
+.meet-links{
+    position: absolute;
+    bottom: 10px;
+    border: thin solid #ACA5A4;
+    width: 90%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.watch-video{
+    text-decoration: none;
+    font-size: .8em;
+    color: #242930;
+}
+
+
+/* MEDIA-QUERY */
+
+@media(max-width: 1350px){
+    .meet-head{
+        width: 60%;
+    }
+    .meet-users{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 985px){
+    .meet-users{
+        width: 90%;
+    }
+}
+
+@media(max-width: 795px){
+    .meet-head{
+        width: 80%;
+    }
+
+    .meet-head h2{
+        font-size: 2em;
+    }
+}
+@media(max-width: 700px){
+    .meet-users{
+        width: 96%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .meet-user{
+        min-height: 450px;
+    }
+}
+
+@media(max-width: 510px){
+    .meet-head{
+        width: 96%;
+    }
+
+    .meet-head h2{
+        font-size: 1.8em;
+    }
+}
+@media(max-width: 407px){
+    .meet-head h2{
+        font-size: 1.6em;
+    }
+}
 /* SECT-6 */
 
 .sect-6{
