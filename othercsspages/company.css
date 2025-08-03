@@ -66,6 +66,77 @@ header{
     font-size: 1.6em;
     visibility: hidden;
 }
+
+.product, .company, .resources{
+    position: relative;
+}
+
+.product-drop{
+    position: absolute;
+    left: -240px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 10px 10px 10px 30px;
+    visibility: hidden;
+}
+
+.product-drop li, .company-drop li, .resources-drop li{
+    padding: 10px 10px 0 10px;
+}
+.product-drop li a span, .company-drop li a span, .resources-drop li a span{
+    font-weight: 600;
+}
+
+.product-drop li p, .company-drop li p, .resources-drop li p{
+    color: #2c2a2a;
+    font-size: .8em;
+}
+
+.product-drop li:hover, .company-drop li:hover, .resources-drop li:hover{
+    background-color: #F8F8F8;
+}
+
+.product:hover .product-drop{
+    visibility: visible;
+}
+
+.company-drop{
+    position: absolute;
+    left: -200px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 10px 10px 10px 30px;
+    visibility: hidden;
+}
+
+.company:hover .company-drop{
+    visibility: visible;
+}
+
+.resources-drop{
+    position: absolute;
+    left: -310px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 10px 10px 10px 30px;
+    visibility: hidden;
+}
+
+.resources:hover .resources-drop{
+    visibility: visible;
+}
 /* HEADER MEDIA QUERY */
 
 @media(max-width: 1167px){
