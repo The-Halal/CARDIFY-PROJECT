@@ -298,9 +298,49 @@ header{
     color: #24282C;
 }
 
+.what{
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 26px;
+}
 
+.wallet{
+    color: #555F68;
+    font-size: 14px;
+}
 
+.wallet-lists{
+    font-size: .8em;
+    list-style-type: disc;
+    margin-bottom: 14px;
+}
 
+.wallet-lists span{
+    font-weight: 500;
+}
+
+.what1{
+    margin-top: 26px;
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 26px;
+}
+
+.virtual-dollar{
+    color: #000000;
+    font-size: 1em;
+    margin-bottom: 26px;
+}
+
+.dollar-lists{
+    font-size: .9em;
+    list-style-type: decimal;
+    margin-bottom: 14px;
+}
+
+.dollar-lists span{
+    font-weight: 500;
+}
 /* SECT-2-MEDIA-Query */
 @media(max-width: 1290px){
     .about-cardify{
