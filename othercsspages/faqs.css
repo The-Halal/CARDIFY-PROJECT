@@ -339,8 +339,10 @@ header{
 }
 
 .dollar-lists span{
-    font-weight: 500;
+    font-weight: 550;
 }
+
+
 /* SECT-2-MEDIA-Query */
 @media(max-width: 1290px){
     .about-cardify{
@@ -360,6 +362,11 @@ header{
     }
 }
 
+@media(max-width: 768px){
+    .right-cardify{
+        margin-top: 30px;
+    }
+}
 @media(max-width: 753px){
     .about-cardify{
         padding: 0;
@@ -385,6 +392,10 @@ header{
 @media(max-width: 560px){
     .list-group{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .dollar-lists{
+        font-size: .8em;
     }
 }
 
@@ -769,7 +780,7 @@ header{
     .people-links{
         flex-direction: column;
         justify-content: center;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         max-width: 160px;
         margin: auto;
         /* text-align: center; */

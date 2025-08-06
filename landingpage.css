@@ -1684,7 +1684,7 @@ header{
     .people-links{
         flex-direction: column;
         justify-content: center;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         max-width: 160px;
         margin: auto;
         /* text-align: center; */
